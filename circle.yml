@@ -4,7 +4,7 @@ machine:
   java:
     version: oraclejdk8
 
-	
+
 ## Customize dependencies
 dependencies:
   override:
@@ -20,12 +20,9 @@ dependencies:
     - mvn dependency:get -Dartifact=log4j:log4j:1.2.17
     - 
     - mvn dependency:resolve
-	
+
 deployment:
   dockerhub:
     branch: master
     commands:
       - $DOCKER_HUB_TRIGGER
-	  
-	  
-	  
