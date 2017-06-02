@@ -3,7 +3,13 @@
 machine:
   java:
     version: oraclejdk8
+  machine:
+    services:
+      - docker
 
+general:
+  artifacts:
+    - "target/*.jar"
 
 ## Customize dependencies
 #dependencies:
